@@ -2,12 +2,14 @@ import { useEffect, useState } from "react";
 import PropTypes from "prop-types";
 
 function MediaSlide({ item, title, className = "" }) {
+    const resolvePath = (path) => `${import.meta.env.BASE_URL}${path.replace(/^\/+/, "")}`;
+
     if (item.type === "video") {
         return (
             <video
                 className={`w-full h-full object-contain ${className}`}
-                src={item.src}
-                poster={item.poster}
+                src={resolvePath(item.src)}
+                poster={resolvePath(item.poster)}
                 controls
                 playsInline
             />
@@ -15,13 +17,14 @@ function MediaSlide({ item, title, className = "" }) {
     }
     return (
         <img
-            src={item.src}
+            src={resolvePath(item.src)}
             alt={item.alt || title}
             className={`w-full h-full object-contain ${className}`}
             loading="lazy"
         />
     );
 }
+
 
 export default function ProjectCard({
     title,
