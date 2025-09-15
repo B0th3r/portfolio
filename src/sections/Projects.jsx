@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 const projects = [
     {
         title: "Multiplayer Game Server",
-        image: "assets/bother.png",
+        image: "assets/ArcadeBob.png",
         madeWith: ["JavaScript", "Node.js", "Socket.IO", "React", "Tailwind"],
         description:
             "Multiplayer server where players can create or join lobbies, with the host controlling game selection and spectating ability for non-players.",
@@ -20,8 +20,8 @@ const projects = [
         liveUrl: "https://okbhopehub.org",
         gallery:
             [
-                { type: "video", src: "assets/OKB-walkthrough.mp4", poster: "assets/OKB-Login.png" },
-                { type: "video", src: "assets/OKB-PatientWalkthrough.mp4", poster: "assets/OKB-Login.png" },
+                { type: "video", src: "assets/OKB-Walkthrough.mp4", poster: "assets/OKB-Login.png" },
+                { type: "video", src: "assets/OKB-PatientWalkthrough.mp4", poster: "assets/OKB-PatientPortal.png" },
             ],
     },
 ];
