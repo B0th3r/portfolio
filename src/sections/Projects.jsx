@@ -8,6 +8,7 @@ const projects = [
         madeWith: ["JavaScript", "Node.js", "Socket.IO", "React", "Tailwind"],
         description:
             "Multiplayer server where players can create or join lobbies, with the host controlling game selection and spectating ability for non-players.",
+        liveUrl: "https://arcadebob.com",
         repoUrl: "https://github.com/B0th3r/Multiplayer-Game-Server",
     },
     {
