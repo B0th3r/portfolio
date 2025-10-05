@@ -16,8 +16,7 @@ const projects = [
         image: "",
         madeWith: ["JavaScript", "MySQL", "PHP", "AWS", "Apache"],
         description:
-            "Medical web application built for the OKB Hope Foundation to streamline patient care. The portal provides role-based access for patients, doctors, nurses, lab technicians, and pharmacists. The portal has features such as visit tracking, vitals entry, lab orders with results, and secure prescription fulfillment. I was solely responsible for designing, developing, and deploying both the backend and frontend. The live portal is available, though access requires authorized credentials.",
-        liveUrl: "https://okbhopehub.org",
+            "Medical web application built for the OKB Hope Foundation to streamline patient care. The portal provides role-based access for patients, doctors, nurses, lab technicians, and pharmacists. The portal has features such as visit tracking, vitals entry, lab orders with results, and secure prescription fulfillment. I was solely responsible for designing, developing, and deploying both the backend and frontend.",
         gallery:
             [
                 { type: "video", src: "assets/OKB-Walkthrough.mp4", poster: "assets/OKB-Login.png" },
