@@ -51,11 +51,6 @@ export default function ProjectCard({
         return () => window.removeEventListener("keydown", onKey);
     }, [open, gallery?.length]);
 
-    const openLightboxAt = (i) => {
-        setIdx(i);
-        setOpen(true);
-    };
-
     return (
         <article
             className={`grid items-center gap-10 md:grid-cols-2 ${flip ? "md:[&>div:first-child]:order-2" : ""}`}
@@ -93,15 +88,6 @@ export default function ProjectCard({
                             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true">
                                 <path d="M9 6l6 6-6 6" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
                             </svg>
-                        </button>
-                        <button
-                            type="button"
-                            onClick={() => openLightboxAt(idx)}
-                            className="absolute bottom-3 right-3 text-xs px-2 py-1 rounded-full
-                   bg-black/60 text-white border border-white/20"
-                            aria-label={`Open media gallery for ${title}`}
-                        >
-                            Expand • {gallery.length}
                         </button>
                     </div>
                 ) : (
