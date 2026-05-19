@@ -13,6 +13,7 @@ import PdMap from '@/assets/ArcadeBob-PdMap.png';
 import Connect from '@/assets/ArcadeBob-MultiGameplay.png';
 import Lobby from '@/assets/ArcadeBob-Lobby.png';
 import LobbyJoin from '@/assets/ArcadeBob-LobbyJoin.png';
+import Blooms from '@/assets/Happiness-Blooms.png';
 
 export const projects = [
   {
@@ -71,6 +72,14 @@ export const projects = [
         poster: okbPatientPortal,
       },
     ],
+  },
+  {
+    title: "Happiness Blooms Counseling",
+    image: Blooms,
+    madeWith: ["React", "JavaScript"],
+    description:
+      "A website for Happiness Blooms Counseling",
+    liveUrl: "https://happinessbloomsllc.com",
   },
 ];
 
