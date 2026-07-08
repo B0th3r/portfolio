@@ -12,6 +12,7 @@ function MediaSlide({ item, title, className = "" }) {
                 poster={resolvePath(item.poster)}
                 controls
                 playsInline
+                preload="metadata"
             />
         );
     }
